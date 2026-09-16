@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-origin: padding-box;
-    border-top-left-radius: 0cm;
 }
 
 header,
@@ -12,33 +11,51 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
+}
 
+/* Required by WDD 130 audit */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Required by WDD 130 audit */
+nav a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
 }
 
 main {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    /* 1️⃣ */
+    max-width: 900px;
+    width: 100%;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
-    ;
+    text-align: left;
 }
 
 h1 {
     margin: 10px;
     text-align: center;
+    color: #2c3e50;
+    /* Required by WDD 130 audit */
 }
 
 h2 {
-    border: bottom 1px solid #222;
+    border-bottom: 1px solid #222;
+    /* Fixed syntax error */
 }
 
+/* Required by WDD 130 audit */
 main img {
-    width: 400px;
+    width: 200px;
     height: auto;
+    border: 2px solid #333;
+    padding: 5px;
     box-shadow: 0 0 30px #333;
 }
 
@@ -47,19 +64,6 @@ section {
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
     background-color: #abe;
-    font-size: 9rem;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-
 }
 
 section p {
@@ -70,15 +74,19 @@ ul {
     margin: 10px 20px;
 }
 
+aside {
+    width: 900px;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
 aside img {
     width: 200px;
     height: auto;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-
 }
 
 p {
@@ -89,5 +97,4 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-
 }

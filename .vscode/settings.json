@@ -59,7 +59,25 @@
   // limit Intellisense help in the terminal
   "terminal.integrated.initialHint": false,
   "cSpell.words": [
+    "Anioma",
+    "Burutu",
     "discription",
-    "socialmedia"
+    "Effurun",
+    "Ijaw",
+    "Isoko",
+    "Itsekiri",
+    "Koko",
+    "Nigeria’s",
+    "socialmedia",
+    "Urhobo"
+  ],
+  "cSpell.ignoreWords": [
+    "Anambra",
+    "Asaba",
+    "Bendel",
+    "EDUVIE",
+    "NYSC",
+    "Ondo",
+    "Warri"
   ]
 }

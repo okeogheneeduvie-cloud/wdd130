@@ -4,8 +4,8 @@ body {
 }
 
 .flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
+    border: 3px dashed palevioletred;
+    background-color: blue;
     display: flex;
     flex-wrap: wrap;
 }

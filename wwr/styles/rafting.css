@@ -1,21 +1,31 @@
+/* Root Color Variables & Fonts */
 :root {
     --primary-color: #055a05;
+    /* Forest green */
+    --secondary-color: #f4a261;
+    /* Warm sand */
     --accent1-color: #264653;
+    /* Dark slate blue */
+    --accent2-color: #e9c46a;
+    /* Light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
+/* Page Width and Center Alignment */
 header,
 main,
 footer {
@@ -23,12 +33,46 @@ footer {
     margin: 0 auto;
 }
 
+/* Header Layout using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+/* Navigation Layout using CSS Flexbox */
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Headings Styling */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Standard Spacing for Content Elements */
 nav,
 p,
 section,
@@ -37,11 +81,7 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* Hero Section Styling */
+/* Hero Section Positioning */
 .hero {
     position: relative;
 }
@@ -52,6 +92,7 @@ article {
     height: auto;
 }
 
+/* Hero Heading Overlay */
 h1 {
     position: absolute;
     top: 20px;
@@ -63,20 +104,53 @@ h1 {
     color: #fff;
 }
 
+/* Hero Article Overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 16px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
 }
 
+/* Floating Image inside Hero Article */
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+/* Footer Layout */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Footer Social Media Navigation (Horizontal & Right Aligned) */
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
     width: 30px;
     height: auto;
+    display: block;
 }

@@ -112,6 +112,8 @@ h1 {
     right: 20px;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 16px;
+    border-left: 6px solid var(--accent2-color);
+    /* Added use for --accent2-color */
 }
 
 /* Floating Image inside Hero Article */
